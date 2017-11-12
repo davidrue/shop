@@ -2,8 +2,6 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
         <h1><%: Title %>.</h1>
-        <h2>Wingtip Toys can help you find the perfect gift.</h2>
-        <p class="lead">We're all about transportation toys. You can order 
-                any of our toys today. Each toy listing has detailed 
-                information to help you choose the right toy.</p>
+        <h2>Ernie's Equipment Enterprise can help you to build the perfect computer.</h2>
+        <p class="lead">To build a functional computer, it is required to buy a Processor, a Graphic Card, a Mainboard, a Hard Drive and a suitable Case. Buying a Keyboard or a Mouse is not mandatory.</p>
 </asp:Content>

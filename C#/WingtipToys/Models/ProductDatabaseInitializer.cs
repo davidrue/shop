@@ -3,10 +3,15 @@ using System.Data.Entity;
 
 namespace WingtipToys.Models
 {
-  public class ProductDatabaseInitializer : DropCreateDatabaseIfModelChanges<ProductContext>
-  {
-    protected override void Seed(ProductContext context)
+  public class ProductDatabaseInitializer : DropCreateDatabaseAlways<ProductContext>  //DropCreateDatabaseIfModelChanges<ProductContext>
     {
+        public ProductDatabaseInitializer()
+        {
+            
+        }
+    protected override void Seed(ProductContext context) 
+        {
+  
       GetCategories().ForEach(c => context.Categories.Add(c));
       GetProducts().ForEach(p => context.Products.Add(p));
     }
@@ -17,28 +22,34 @@ namespace WingtipToys.Models
                 new Category
                 {
                     CategoryID = 1,
-                    CategoryName = "Cars"
+                    CategoryName = "Processors"
                 },
                 new Category
                 {
                     CategoryID = 2,
-                    CategoryName = "Planes"
+                    CategoryName = "Graphics Cards"
                 },
                 new Category
                 {
                     CategoryID = 3,
-                    CategoryName = "Trucks"
+                    CategoryName = "Mainboards"
                 },
+                
                 new Category
                 {
                     CategoryID = 4,
-                    CategoryName = "Boats"
+                    CategoryName = "Hard drives"
+                },
+                 new Category
+                {
+                    CategoryID = 5,
+                    CategoryName = "Cases"
                 },
                 new Category
                 {
-                    CategoryID = 5,
-                    CategoryName = "Rockets"
-                },
+                    CategoryID = 6,
+                    CategoryName = "Keyboards and Mouses"
+                }
             };
 
       return categories;
@@ -50,151 +61,149 @@ namespace WingtipToys.Models
                 new Product
                 {
                     ProductID = 1,
-                    ProductName = "Convertible Car",
-                    Description = "This convertible car is fast! The engine is powered by a neutrino based battery (not included)." + 
-                                  "Power it up and let it go!", 
-                    ImagePath="carconvert.png",
-                    UnitPrice = 22.50,
+                    ProductName = "Intel i3 Core",
+                    Description = "A processor with a very low power consumption.", 
+                    ImagePath="inteli3.png",
+                    UnitPrice = 149.95,
                     CategoryID = 1
                },
                 new Product 
                 {
                     ProductID = 2,
-                    ProductName = "Old-time Car",
-                    Description = "There's nothing old about this toy car, except it's looks. Compatible with other old toy cars.",
-                    ImagePath="carearly.png",
-                    UnitPrice = 15.95,
+                      ProductName = "Intel i5 Core",
+                    Description = "The processor with balance between power consumption and computing power.",
+                    ImagePath="inteli5.png",
+                    UnitPrice = 199.95,
                      CategoryID = 1
                },
                 new Product
                 {
                     ProductID = 3,
-                    ProductName = "Fast Car",
-                    Description = "Yes this car is fast, but it also floats in water.",
-                    ImagePath="carfast.png",
-                    UnitPrice = 32.99,
+                    ProductName = "Intel i7 Core",
+                    Description = "The processor with the most computing power.",
+                    ImagePath="inteli7.png",
+                    UnitPrice = 249.95,
                     CategoryID = 1
                 },
                 new Product
                 {
                     ProductID = 4,
-                    ProductName = "Super Fast Car",
-                    Description = "Use this super fast car to entertain guests. Lights and doors work!",
-                    ImagePath="carfaster.png",
-                    UnitPrice = 8.95,
+                    ProductName = "AMD Phenom II X6",
+                    Description = "The processor for the low budget.",
+                    ImagePath="amdx6.png",
+                    UnitPrice = 119.95,
                     CategoryID = 1
                 },
                 new Product
                 {
                     ProductID = 5,
-                    ProductName = "Old Style Racer",
-                    Description = "This old style racer can fly (with user assistance). Gravity controls flight duration." + 
-                                  "No batteries required.",
-                    ImagePath="carracer.png",
-                    UnitPrice = 34.95,
-                    CategoryID = 1
+                    ProductName = "Gigabyte GTX 1080",
+                    Description = "This is the powerful Gigabyte GTX 1080.",
+                    ImagePath = "gigabytegtx1080.png",
+                    UnitPrice = 155.95,
+                    CategoryID = 2
                 },
                 new Product
                 {
                     ProductID = 6,
-                    ProductName = "Ace Plane",
-                    Description = "Authentic airplane toy. Features realistic color and details.",
-                    ImagePath="planeace.png",
-                    UnitPrice = 95.00,
+                    ProductName = "NVidia NVS 810",
+                    Description = "This is the brilliant NVidia NVS 810.",
+                    ImagePath="nvidianvs810.png",
+                    UnitPrice = 169.95,
                     CategoryID = 2
                 },
                 new Product
                 {
                     ProductID = 7,
-                    ProductName = "Glider",
-                    Description = "This fun glider is made from real balsa wood. Some assembly required.",
-                    ImagePath="planeglider.png",
-                    UnitPrice = 4.95,
+                    ProductName = "Asus",
+                    Description = "This is some Asus Graphic Card. It is really awesome. Really, trust me.",
+                    ImagePath="asus.png",
+                    UnitPrice = 199.95,
                     CategoryID = 2
                 },
                 new Product
                 {
                     ProductID = 8,
-                    ProductName = "Paper Plane",
-                    Description = "This paper plane is like no other paper plane. Some folding required.",
-                    ImagePath="planepaper.png",
-                    UnitPrice = 2.95,
-                    CategoryID = 2
+                    ProductName = "Gigabyte 990FX-Gaming",
+                    Description = "This Mainboard is like no other Mainboard.",
+                    ImagePath="gigabyte990fx-gaming.png",
+                    UnitPrice = 179.99,
+                    CategoryID = 3
                 },
                 new Product
                 {
                     ProductID = 9,
-                    ProductName = "Propeller Plane",
-                    Description = "Rubber band powered plane features two wheels.",
-                    ImagePath="planeprop.png",
-                    UnitPrice = 32.95,
-                    CategoryID = 2
+                    ProductName = "MSI Z270 Gaming M5",
+                    Description = "There is no Mainboard as stylish as this one.",
+                    ImagePath="msiz270gamingm5.png",
+                    UnitPrice = 129.99,
+                    CategoryID = 3
                 },
                 new Product
                 {
                     ProductID = 10,
-                    ProductName = "Early Truck",
-                    Description = "This toy truck has a real gas powered engine. Requires regular tune ups.",
-                    ImagePath="truckearly.png",
-                    UnitPrice = 15.00,
-                    CategoryID = 3
+                    ProductName = "Samsung NVMe SSD960 Pro",
+                    Description = "This Hard Drive as such an outstanding performance. You would not believe it.",
+                    ImagePath="samsungnvmessd960pro.png",
+                    UnitPrice = 139.99,
+                    CategoryID = 4
                 },
                 new Product
                 {
                     ProductID = 11,
-                    ProductName = "Fire Truck",
-                    Description = "You will have endless fun with this one quarter sized fire truck.",
-                    ImagePath="truckfire.png",
-                    UnitPrice = 26.00,
-                    CategoryID = 3
+                    ProductName = "Western Digital Blue 1TB",
+                    Description = "So much storage. Wow.",
+                    ImagePath="westerndigitalblue.png",
+                    UnitPrice = 129.99,
+                    CategoryID = 4
                 },
-                new Product
+                 new Product
                 {
                     ProductID = 12,
-                    ProductName = "Big Truck",
-                    Description = "This fun toy truck can be used to tow other trucks that are not as big.",
-                    ImagePath="truckbig.png",
-                    UnitPrice = 29.00,
-                    CategoryID = 3
+                    ProductName = "ATX Full-Tower",
+                    Description = "So big. Just awesome.",
+                    ImagePath="ATX Full-Tower.png",
+                    UnitPrice = 59.99,
+                    CategoryID = 5
                 },
-                new Product
+                  new Product
                 {
                     ProductID = 13,
-                    ProductName = "Big Ship",
-                    Description = "Is it a boat or a ship. Let this floating vehicle decide by using its " + 
-                                  "artifically intelligent computer brain!",
-                    ImagePath="boatbig.png",
-                    UnitPrice = 95.00,
-                    CategoryID = 4
+                    ProductName = "PCCG Infinity 1080Ti Gaming",
+                    Description = "Everyone will be totaly jealous.",
+                    ImagePath="PCCGInfinity1080TiGaming.png",
+                    UnitPrice = 64.99,
+                    CategoryID = 5
                 },
-                new Product
+
+                   new Product
                 {
                     ProductID = 14,
-                    ProductName = "Paper Boat",
-                    Description = "Floating fun for all! This toy boat can be assembled in seconds. Floats for minutes!" + 
-                                  "Some folding required.",
-                    ImagePath="boatpaper.png",
-                    UnitPrice = 4.95,
-                    CategoryID = 4
+                    ProductName = "Logitech Keyboard",
+                    Description = "It has great ergonomics.",
+                    ImagePath="logitech.png",
+                    UnitPrice = 89.99,
+                    CategoryID = 6
                 },
-                new Product
+                    new Product
                 {
                     ProductID = 15,
-                    ProductName = "Sail Boat",
-                    Description = "Put this fun toy sail boat in the water and let it go!",
-                    ImagePath="boatsail.png",
-                    UnitPrice = 42.95,
-                    CategoryID = 4
+                    ProductName = "Logitech Mouse",
+                    Description = "Every click has its own feeling. You have to feel it yourself!",
+                    ImagePath="LogitechM325.png",
+                    UnitPrice = 34.99,
+                    CategoryID = 6
                 },
-                new Product
+                      new Product
                 {
                     ProductID = 16,
-                    ProductName = "Rocket",
-                    Description = "This fun rocket will travel up to a height of 200 feet.",
-                    ImagePath="rocket.png",
-                    UnitPrice = 122.95,
-                    CategoryID = 5
+                    ProductName = "Microsoft Super Bundle Keyboard and Mouse",
+                    Description = "Just priceless!",
+                    ImagePath="MicrosoftComfortBoard.png",
+                    UnitPrice = 179.99,
+                    CategoryID = 6
                 }
+
             };
 
       return products;
