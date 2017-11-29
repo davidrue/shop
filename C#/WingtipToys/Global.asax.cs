@@ -43,6 +43,12 @@ namespace WingtipToys
               "Product/{productName}",
               "~/ProductDetails.aspx"
           );
+
+            routes.MapPageRoute(
+             "ProductsByCategoryConfiguratorRoute",
+             "Category/{categoryName}",
+             "~/ProductConfiguratorList.aspx"
+         );
         }
 
         void Application_Error(object sender, EventArgs e)

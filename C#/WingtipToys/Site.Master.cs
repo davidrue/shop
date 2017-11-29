@@ -75,6 +75,7 @@ namespace WingtipToys
           {
             adminLink.Visible = true;
           }
+
         }
 
         protected void Page_PreRender(object sender, EventArgs e)

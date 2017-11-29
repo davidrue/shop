@@ -103,3 +103,63 @@ Exception Type: System.Exception
 Exception: The error was unhandled by application code.
 Source: customErrors section - Web.config
 Stack Trace: 
+********** 29.11.2017 10:27:04 **********
+Exception Type: System.InvalidOperationException
+Exception: Eine öffentliche Methode mit dem Namen "GetCategories" wurde nicht gefunden, oder im Typ "ASP.configurator_aspx" waren mehrere Methoden mit demselben Namen vorhanden.
+Source: Page_Error - Default.aspx
+Stack Trace: 
+   bei System.Web.UI.WebControls.ModelDataSourceView.FindMethod(String methodName)
+   bei System.Web.UI.WebControls.ModelDataSourceView.EvaluateSelectParameters()
+   bei System.Web.UI.WebControls.ModelDataSourceView.OnPageLoadComplete(Object sender, EventArgs e)
+   bei System.EventHandler.Invoke(Object sender, EventArgs e)
+   bei System.Web.UI.Page.OnLoadComplete(EventArgs e)
+   bei System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 29.11.2017 10:28:55 **********
+Exception Type: System.InvalidOperationException
+Exception: Eine öffentliche Methode mit dem Namen "GetCategories" wurde nicht gefunden, oder im Typ "ASP.configurator_aspx" waren mehrere Methoden mit demselben Namen vorhanden.
+Source: Page_Error - Default.aspx
+Stack Trace: 
+   bei System.Web.UI.WebControls.ModelDataSourceView.FindMethod(String methodName)
+   bei System.Web.UI.WebControls.ModelDataSourceView.EvaluateSelectParameters()
+   bei System.Web.UI.WebControls.ModelDataSourceView.OnPageLoadComplete(Object sender, EventArgs e)
+   bei System.EventHandler.Invoke(Object sender, EventArgs e)
+   bei System.Web.UI.Page.OnLoadComplete(EventArgs e)
+   bei System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 29.11.2017 10:43:49 **********
+Exception Type: System.InvalidOperationException
+Exception: Eine öffentliche Methode mit dem Namen "GetFirstCategory" wurde nicht gefunden, oder im Typ "ASP.configurator_aspx" waren mehrere Methoden mit demselben Namen vorhanden.
+Source: Page_Error - Default.aspx
+Stack Trace: 
+   bei System.Web.UI.WebControls.ModelDataSourceView.FindMethod(String methodName)
+   bei System.Web.UI.WebControls.ModelDataSourceView.EvaluateSelectParameters()
+   bei System.Web.UI.WebControls.ModelDataSourceView.OnPageLoadComplete(Object sender, EventArgs e)
+   bei System.EventHandler.Invoke(Object sender, EventArgs e)
+   bei System.Web.UI.Page.OnLoadComplete(EventArgs e)
+   bei System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 29.11.2017 10:44:50 **********
+Exception Type: System.InvalidOperationException
+Exception: Eine öffentliche Methode mit dem Namen "GetFirstCategory" wurde nicht gefunden, oder im Typ "ASP.configurator_aspx" waren mehrere Methoden mit demselben Namen vorhanden.
+Source: Page_Error - Default.aspx
+Stack Trace: 
+   bei System.Web.UI.WebControls.ModelDataSourceView.FindMethod(String methodName)
+   bei System.Web.UI.WebControls.ModelDataSourceView.EvaluateSelectParameters()
+   bei System.Web.UI.WebControls.ModelDataSourceView.OnPageLoadComplete(Object sender, EventArgs e)
+   bei System.EventHandler.Invoke(Object sender, EventArgs e)
+   bei System.Web.UI.Page.OnLoadComplete(EventArgs e)
+   bei System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 29.11.2017 10:46:04 **********
+Exception Type: System.InvalidOperationException
+Exception: Eine öffentliche Methode mit dem Namen "GetFirstCategory" wurde nicht gefunden, oder im Typ "ASP.configurator_aspx" waren mehrere Methoden mit demselben Namen vorhanden.
+Source: Page_Error - Default.aspx
+Stack Trace: 
+   bei System.Web.UI.WebControls.ModelDataSourceView.FindMethod(String methodName)
+   bei System.Web.UI.WebControls.ModelDataSourceView.EvaluateSelectParameters()
+   bei System.Web.UI.WebControls.ModelDataSourceView.OnPageLoadComplete(Object sender, EventArgs e)
+   bei System.EventHandler.Invoke(Object sender, EventArgs e)
+   bei System.Web.UI.Page.OnLoadComplete(EventArgs e)
+   bei System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
