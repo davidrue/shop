@@ -4,7 +4,7 @@
     <section>
         <div>
             <hgroup>
-                <h2><%: Page.Title %></h2>
+                <h2><%: Page.Title %></h2>                  
             </hgroup>
 
             <asp:ListView ID="productList" runat="server" 

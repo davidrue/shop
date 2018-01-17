@@ -20,6 +20,10 @@ namespace WingtipToys.Models
 
     public int? CategoryID { get; set; }
 
-    public virtual Category Category { get; set; }
+    public bool isIntel { get; set; }
+
+        public bool isAmd { get; set; }
+
+        public virtual Category Category { get; set; }
   }
 }

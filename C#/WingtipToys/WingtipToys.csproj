@@ -166,6 +166,11 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="Catalog\Images\amd7860k.png" />
+    <Content Include="Catalog\Images\ASRock.png" />
+    <Content Include="Catalog\Images\Thumbs\amd7860k.png" />
+    <Content Include="Catalog\Images\Thumbs\ASRock.png" />
+    <Content Include="Configurator\AddToConfiguratorCart.aspx" />
     <Content Include="AddToCart.aspx" />
     <Content Include="Admin\AdminPage.aspx" />
     <Content Include="App_Readme\Elmah.txt" />
@@ -246,13 +251,19 @@
     <Content Include="Checkout\CheckoutError.aspx" />
     <Content Include="Checkout\CheckoutReview.aspx" />
     <Content Include="Checkout\CheckoutStart.aspx" />
+    <Content Include="Configurator\HardDrives.aspx" />
+    <Content Include="Configurator\Cases.aspx" />
+    <Content Include="Configurator\Mainboards.aspx" />
+    <Content Include="Configurator\GraphicsCards.aspx" />
+    <Content Include="Configurator\KeyboardsAndMouses.aspx" />
+    <Content Include="Configurator\ConfSwitcher.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-original.css" />
     <Content Include="Content\bootstrap-original.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="Configurator.aspx" />
+    <Content Include="Configurator\Configurator.aspx" />
     <Content Include="ErrorPage.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Images\logoNew.JPG" />
@@ -266,8 +277,9 @@
     <Content Include="Checkout\Web.config" />
     <Content Include="Admin\Web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Configurator\Processors.aspx" />
     <Content Include="ProductDetails.aspx" />
-    <Content Include="ProductConfiguratorList.aspx" />
+    <Content Include="Configurator\ProductConfiguratorList.aspx" />
     <Content Include="ProductList.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -309,6 +321,7 @@
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Site.Mobile.Master" />
+    <Content Include="SiteConfig.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -422,6 +435,13 @@
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Configurator\AddToConfiguratorCart.aspx.cs">
+      <DependentUpon>AddToConfiguratorCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configurator\AddToConfiguratorCart.aspx.designer.cs">
+      <DependentUpon>AddToConfiguratorCart.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AddToCart.aspx.cs">
       <DependentUpon>AddToCart.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -482,6 +502,48 @@
     <Compile Include="Checkout\CheckoutStart.aspx.designer.cs">
       <DependentUpon>CheckoutStart.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Configurator\HardDrives.aspx.cs">
+      <DependentUpon>HardDrives.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configurator\HardDrives.aspx.designer.cs">
+      <DependentUpon>HardDrives.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configurator\Cases.aspx.cs">
+      <DependentUpon>Cases.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configurator\Cases.aspx.designer.cs">
+      <DependentUpon>Cases.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configurator\Mainboards.aspx.cs">
+      <DependentUpon>Mainboards.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configurator\Mainboards.aspx.designer.cs">
+      <DependentUpon>Mainboards.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configurator\GraphicsCards.aspx.cs">
+      <DependentUpon>GraphicsCards.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configurator\GraphicsCards.aspx.designer.cs">
+      <DependentUpon>GraphicsCards.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configurator\KeyboardsAndMouses.aspx.cs">
+      <DependentUpon>KeyboardsAndMouses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configurator\KeyboardsAndMouses.aspx.designer.cs">
+      <DependentUpon>KeyboardsAndMouses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configurator\ConfSwitcher.aspx.cs">
+      <DependentUpon>ConfSwitcher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configurator\ConfSwitcher.aspx.designer.cs">
+      <DependentUpon>ConfSwitcher.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -489,11 +551,11 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Configurator.aspx.cs">
+    <Compile Include="Configurator\Configurator.aspx.cs">
       <DependentUpon>Configurator.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Configurator.aspx.designer.cs">
+    <Compile Include="Configurator\Configurator.aspx.designer.cs">
       <DependentUpon>Configurator.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
@@ -526,6 +588,13 @@
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ProductContext.cs" />
     <Compile Include="Models\ProductDatabaseInitializer.cs" />
+    <Compile Include="Configurator\Processors.aspx.cs">
+      <DependentUpon>Processors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configurator\Processors.aspx.designer.cs">
+      <DependentUpon>Processors.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ProductDetails.aspx.cs">
       <DependentUpon>ProductDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -533,11 +602,11 @@
     <Compile Include="ProductDetails.aspx.designer.cs">
       <DependentUpon>ProductDetails.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ProductConfiguratorList.aspx.cs">
+    <Compile Include="Configurator\ProductConfiguratorList.aspx.cs">
       <DependentUpon>ProductConfiguratorList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ProductConfiguratorList.aspx.designer.cs">
+    <Compile Include="Configurator\ProductConfiguratorList.aspx.designer.cs">
       <DependentUpon>ProductConfiguratorList.aspx</DependentUpon>
     </Compile>
     <Compile Include="ProductList.aspx.cs">
@@ -554,6 +623,13 @@
     </Compile>
     <Compile Include="ShoppingCart.aspx.designer.cs">
       <DependentUpon>ShoppingCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SiteConfig.Master.cs">
+      <DependentUpon>SiteConfig.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteConfig.Master.designer.cs">
+      <DependentUpon>SiteConfig.Master</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>

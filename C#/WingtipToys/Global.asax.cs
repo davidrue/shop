@@ -33,22 +33,26 @@ namespace WingtipToys
 
         void RegisterCustomRoutes(RouteCollection routes)
         {
+           
+            routes.MapPageRoute(
+              "ProductByNameRoute",
+              "Product/{productName}",
+              "~/ProductDetails.aspx"
+          );
+           
           routes.MapPageRoute(
               "ProductsByCategoryRoute",
               "Category/{categoryName}",
               "~/ProductList.aspx"
           );
-          routes.MapPageRoute(
-              "ProductByNameRoute",
-              "Product/{productName}",
-              "~/ProductDetails.aspx"
-          );
 
             routes.MapPageRoute(
              "ProductsByCategoryConfiguratorRoute",
-             "Category/{categoryName}",
-             "~/ProductConfiguratorList.aspx"
+             "Category/routename/{categoryName}",
+             "~/Configurator/{categoryName}.aspx"
          );
+                  
+                       
         }
 
         void Application_Error(object sender, EventArgs e)
