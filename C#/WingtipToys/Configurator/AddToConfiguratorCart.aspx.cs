@@ -10,7 +10,9 @@ using WingtipToys.Models;
 
 
 /*
- * This class is quite similar to the default class 'AddToCart'. It is accessed when you add an item in the configurator. It redirects you to the next product category.
+ * This class is quite similar to the default class 'AddToCart'.
+ * It is accessed when you add an item in the configurator.
+ * It redirects you to the next product category.
  */
 namespace WingtipToys
 {

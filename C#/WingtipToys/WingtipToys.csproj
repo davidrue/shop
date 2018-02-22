@@ -256,7 +256,6 @@
     <Content Include="Configurator\Mainboards.aspx" />
     <Content Include="Configurator\GraphicsCards.aspx" />
     <Content Include="Configurator\KeyboardsAndMouses.aspx" />
-    <Content Include="Configurator\ConfSwitcher.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-original.css" />
     <Content Include="Content\bootstrap-original.min.css" />
@@ -279,7 +278,6 @@
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Configurator\Processors.aspx" />
     <Content Include="ProductDetails.aspx" />
-    <Content Include="Configurator\ProductConfiguratorList.aspx" />
     <Content Include="ProductList.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -537,13 +535,6 @@
     <Compile Include="Configurator\KeyboardsAndMouses.aspx.designer.cs">
       <DependentUpon>KeyboardsAndMouses.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Configurator\ConfSwitcher.aspx.cs">
-      <DependentUpon>ConfSwitcher.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Configurator\ConfSwitcher.aspx.designer.cs">
-      <DependentUpon>ConfSwitcher.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -601,13 +592,6 @@
     </Compile>
     <Compile Include="ProductDetails.aspx.designer.cs">
       <DependentUpon>ProductDetails.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Configurator\ProductConfiguratorList.aspx.cs">
-      <DependentUpon>ProductConfiguratorList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Configurator\ProductConfiguratorList.aspx.designer.cs">
-      <DependentUpon>ProductConfiguratorList.aspx</DependentUpon>
     </Compile>
     <Compile Include="ProductList.aspx.cs">
       <DependentUpon>ProductList.aspx</DependentUpon>

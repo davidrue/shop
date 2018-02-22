@@ -58,6 +58,7 @@ namespace WingtipToys
             return query;
         }
 
+        //finds an returns the link to next required product category
         public Category GetNextTestCategory()
         {
             var _db = new WingtipToys.Models.ProductContext();

@@ -85,18 +85,6 @@ namespace WingtipToys
 
             }
 
-
-            //if (categoryId.HasValue && categoryId > 0)
-            //{
-            //  query = query.Where(p => p.CategoryID == categoryId);
-            //}
-
-            //if (!String.IsNullOrEmpty(categoryName))
-            //{
-            //  query = query.Where(p =>
-            //                      String.Compare(p.Category.CategoryName,
-            //                      categoryName) == 0);
-            //}
             return query;
             
     }
