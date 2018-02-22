@@ -7,7 +7,9 @@ using System.Web.UI.WebControls;
 using WingtipToys.Models;
 using System.Web.ModelBinding;
 using System.Web.Routing;
-
+/*
+ * This is the controller for the Product Category 'GraphicsCards', when you are in the Configurator 
+ */
 namespace WingtipToys
 {
   public partial class GraphicsCards : System.Web.UI.Page

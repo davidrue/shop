@@ -1,5 +1,7 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteConfig.Master.cs" Inherits="WingtipToys.SiteConfigMaster" %>
 
+<%--A special SiteMaster that will be used when you start the configurator. THe main difference is that this SiteMaster hides the Menu, where you can choose between the product categories--%>
+
 <!DOCTYPE html>
 
 <html lang="en">

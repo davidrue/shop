@@ -7,6 +7,14 @@ using System.Web.UI.WebControls;
 using WingtipToys.Models;
 using WingtipToys.Logic;
 
+
+/*
+ * This represent the page, which is opened when you click on
+ * 'Configurator' in the Navigation Bar at the top of the page.
+ * It gives you the opportunity to either start the configurator
+ * or to redirect you to the next product category that is required,
+ * if you have already startet the configurator.
+ */ 
 namespace WingtipToys
 {
   public partial class _Configurator : Page

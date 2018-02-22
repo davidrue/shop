@@ -8,6 +8,9 @@ using WingtipToys.Models;
 using System.Web.ModelBinding;
 using System.Web.Routing;
 
+/*
+ * This is the controller for the Product Category 'HardDrives', when you are in the Configurator 
+ */
 namespace WingtipToys
 {
   public partial class HardDrives : System.Web.UI.Page

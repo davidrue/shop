@@ -9,6 +9,9 @@ using System.Web.ModelBinding;
 using System.Web.Routing;
 using WingtipToys.Logic;
 
+/*
+ * This is the controller for the Product Category 'Mainboards', when you are in the Configurator 
+ */
 namespace WingtipToys
 {
   public partial class Mainboards : System.Web.UI.Page

@@ -8,6 +8,9 @@ using WingtipToys.Models;
 using System.Web.ModelBinding;
 using System.Web.Routing;
 
+/*
+ * This is the controller for the Product Category 'Cases', when you are in the Configurator 
+ */
 namespace WingtipToys
 {
   public partial class Cases : System.Web.UI.Page
@@ -31,17 +34,6 @@ namespace WingtipToys
 
       query = query.Where(p => p.CategoryID == 5);
 
-            //if (categoryId.HasValue && categoryId > 0)
-            //{
-            //  query = query.Where(p => p.CategoryID == categoryId);
-            //}
-
-            //if (!String.IsNullOrEmpty(categoryName))
-            //{
-            //  query = query.Where(p =>
-            //                      String.Compare(p.Category.CategoryName,
-            //                      categoryName) == 0);
-            //}
             return query;
     }
   }

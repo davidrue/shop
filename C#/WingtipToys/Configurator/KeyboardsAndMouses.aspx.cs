@@ -8,6 +8,10 @@ using WingtipToys.Models;
 using System.Web.ModelBinding;
 using System.Web.Routing;
 
+
+/*
+ * This is the controller for the Product Category 'KeyboardsAndMouses', when you are in the Configurator 
+ */
 namespace WingtipToys
 {
   public partial class KeyboardsAndMouses : System.Web.UI.Page

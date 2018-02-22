@@ -11,14 +11,14 @@ using System.Web.Routing;
 
 namespace WingtipToys
 {
-  public partial class ConfSwitcher : System.Web.UI.Page
-  {
-    protected void Page_Load(object sender, EventArgs e)
+    public partial class ConfSwitcher : System.Web.UI.Page
     {
+        protected void Page_Load(object sender, EventArgs e)
+        {
 
-    }
+        }
 
-    public void Test()
+        public void Test()
         {
 
         }
@@ -123,14 +123,14 @@ namespace WingtipToys
                 }
             }
         }
-            public IQueryable<Product> GetProducts(
-                        [QueryString("id")] int? categoryId,
-                        [RouteData] string categoryName)
-    {
-      var _db = new WingtipToys.Models.ProductContext();
-      IQueryable<Product> query = _db.Products;
+        public IQueryable<Product> GetProducts(
+                    [QueryString("id")] int? categoryId,
+                    [RouteData] string categoryName)
+        {
+            var _db = new WingtipToys.Models.ProductContext();
+            IQueryable<Product> query = _db.Products;
 
-      query = query.Where(p => p.CategoryID == 1);
+            query = query.Where(p => p.CategoryID == 1);
 
             //if (categoryId.HasValue && categoryId > 0)
             //{
@@ -144,6 +144,6 @@ namespace WingtipToys
             //                      categoryName) == 0);
             //}
             return query;
+        }
     }
-  }
 }
